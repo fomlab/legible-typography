@@ -1,13 +1,13 @@
 # Legible Typography
 
-This repo is a Jekyll adaptation of Mary C. Dyson's book ‘Legibility: how and 
+This repo is a Jekyll adaptation of Mary C. Dyson's book ‘Legibility: how and
 why typography affects ease of reading’.
 
 The repository also includes a auto-generated PDF version of this site.
 
 ## Publishing updates
 
-The site [https://legible-typography.com/](https://legible-typography.com/) is 
+The site [https://legible-typography.com/](https://legible-typography.com/) is
 run as a Github pages Jekyll website. Pushing to the `main` branch of the repo
 will automatically update the website.
 
@@ -20,9 +20,10 @@ a timestamped PDF, so the link to download the PDF needs to be updated!
 ### Running the site locally
 
 1. Clone the repo
-2. Install Jekyll (requires Ruby): `gem install`
-3. Run the site locally with: `bundle exec jekyll serve --trace`
-4. The site should be accessible locally at [http://127.0.0.1:4000/](http://127.0.0.1:4000/)
+2. Install Ruby 3.1.6 (you can use a runtime version manager such as [asdf](https://asdf-vm.com/))
+3. Install Jekyll (requires Ruby): `bundle install`
+4. Run the site locally with: `bundle exec jekyll serve --trace`
+5. The site should be accessible locally at [http://127.0.0.1:4000/](http://127.0.0.1:4000/)
 
 ### Generating the PDF
 
@@ -30,7 +31,7 @@ a timestamped PDF, so the link to download the PDF needs to be updated!
 2. Install wkhtmltopdf 0.12.6 (with patched qt) e.g. with: `brew install wkhtmlpdf`
 3. Run the site locally as described above - a print CSS version of *THE LOCAL SITE* is what get written to the PDF!
 4. (Make sure the script is executable with `chmod +x make-pdf.sh`)
-5. Generate a new PDF with `./make-pdf.sh` 
+5. Generate a new PDF with `./make-pdf.sh`
 6. Make sure to git add the new PDFs; the links to the files should automatically get updated
 
 The generation will take a couple of minutes. Each chapter and section of the
